@@ -1,0 +1,58 @@
+@import 'mixins';
+
+$page_width: 8.5in;
+$page_height: 14in;
+
+@page {
+  size: $page_width $page_height;
+  margin: 0;
+}
+
+body {
+  width: $page_width;
+  font-size: 1em;
+
+  .panel {
+
+    width: $page_width;
+    height: $page_height/3;
+
+    padding: 1.5em;
+  }
+
+  header.panel {
+    padding: 6em;
+  }
+
+}
+
+aside {
+  padding: 0 1em;
+}
+
+.divider {
+  height: 1em;
+  margin: .5em;
+}
+
+
+
+#appetizers {
+  width: 85em;
+  text-align: center;
+  > article {
+    padding: 0;
+    > * {
+      display: block;
+    }
+  }
+}
+
+#sides article {
+  font-size: .9em;
+}
+
+
+.notes {
+  font-size: .8em;
+}

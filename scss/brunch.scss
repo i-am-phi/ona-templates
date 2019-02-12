@@ -1,0 +1,153 @@
+@page {
+  margin: 0;
+  size: 8.5in 11in;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  width: 8.5in;
+  height: 11in;
+
+  padding: 2em;
+
+}
+
+
+
+// html {
+//   font-size: 15pt;
+//   line-height: 1.25em;
+//   background-color: #EEE;
+// }
+
+body {
+  width: 8.5in;
+}
+
+.page.front {
+  // width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2.5in 1fr;
+  align-items: space-between;
+
+  > header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // display: grid;
+    // grid-template-rows: 2.25in 1in 1fr;
+    // grid-template-columns: 2.5in;
+    > * {
+      padding: .5em;
+    }
+    h2 {
+      font-size: 1.8em;
+      line-height: 1.2;
+      font-style: italic;
+      font-weight: 400;
+    }
+    img {
+      width: 2.5in;
+    }
+    .banner {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+  }
+  > main, >section {
+    // height: 100%;
+    padding: 0 4em;
+
+    display: grid;
+    // flex-direction: column;
+    align-items: space-evenly;
+
+    > h1 {
+      font-size: 1.5em;
+    }
+    footer {
+      font-size: .8em;
+
+      padding-top: 1em;
+      margin-top: 1em;
+      border-top: 1px #CCC solid;
+
+
+    }
+  }
+}
+
+
+
+// body > header {
+//   color: #999;
+//
+//   padding: .5em;
+//
+//   display: flex;
+//   flex-flow: row nowrap;
+//   justify-content: space-between;
+//   align-items: center;
+//
+// }
+// body > header  h1 {
+//   font-style: italic;
+//   font-size: 1.7em;
+//   margin: .25em auto;
+//   font-weight: normal;
+//   font-feature-settings: 'kern' 1, 'onum' 1, 'liga' 1;
+//
+// }
+//
+//
+//
+// /* menu section */
+// body > main {
+//   height: 100%;
+//
+//   display: flex;
+//   flex-flow: column nowrap;
+//   justify-content: space-evenly;
+//
+// }
+//
+// /* menu section headings */
+// body > main > h1 {
+//   letter-spacing: .25em;
+//   padding-left: .25em;
+//   padding-top: 1.5em;
+//
+//   font-size: 1.1em;
+//   font-family: "Imprint MT Shadow", serif;
+//   font-weight: normal;
+// }
+//
+// /* menu items */
+// article {
+//   display: flex;
+//   flex-flow: column nowrap;
+// }
+// article > p {
+//   font-style: italic;
+// }
+// article > p > em {
+//   font-style: normal;
+//   font-weight: 700;
+//   padding-left: .25em;
+// }
+// article > h1 > em {
+//   font-style: normal;
+//   font-weight: 700;
+//   padding-left: .25em;
+// }

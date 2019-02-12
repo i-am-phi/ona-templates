@@ -1,0 +1,31 @@
+.panel {
+
+  height: 100%;
+  width: 100%;
+
+  padding: 1.5em;
+  
+  border: #EEE 1px solid;
+  @media print {
+    border: none;
+  }
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center;
+
+  > section {
+    @include flex-column;
+
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+
+  &.featured {
+    > section {
+      font-size: 1.15em;
+    }
+  }
+}

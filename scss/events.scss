@@ -1,0 +1,157 @@
+@import 'mixins';
+
+@page {
+  margin: 0;
+  size: 8.5in 14in;
+}
+
+hr {
+  border-top: .1em solid #CCC;
+  width: 12em;
+  margin: .2em auto;
+}
+
+body {
+  width: 8.5in;
+  height: 14in;
+  font-size: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+
+  .page {
+    width: 8.5in;
+    height: 14in;
+  }
+
+  header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+    height: 10em;
+    padding: 2em 4em;
+
+    .logo {
+      height: auto;
+      width: 10em;
+    }
+    .graphic {
+      margin: 0 1em;
+      width: 8em;
+    }
+    > .tag {
+      width: auto;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+
+      > h1 {
+        font-family: 'Cinzel Decorative';
+        font-weight: 400;
+        font-size: 1.5em;
+
+        text-transform: none;
+        padding: .2em 0;
+      }
+    }
+  }
+  .panel {
+    width: 100%;
+    // height: calc(14in/3);
+    height: auto;
+    border: none;
+
+    padding: 1.5em;
+
+
+    .options {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-content: center;
+      align-items: center;
+
+      > h2 {
+        padding: .25em;
+        font-style: italic;
+        font-weight: 400;
+
+      }
+    }
+    section {
+      // padding-left: 2em;
+      // padding-right: 2em;
+    }
+
+    .tag {
+      text-align: center;
+      font-size: 1em;
+      h1 {
+        font-size: 1.1em;
+        width: min-content;
+        margin: 0 auto;
+      }
+
+    }
+
+  }
+
+}
+
+aside {
+  padding: 0 1em;
+}
+
+.divider {
+  height: 1em;
+  margin: .5em;
+}
+section>h1 {
+  padding-top: 0;
+}
+
+
+// .two-column {
+//   display: grid;
+//   // width: 100em;
+//   grid-template-columns: 1fr 1fr;
+//   // grid-template-rows: auto 1fr auto;
+//   // grid-auto-rows: 5em 1fr;
+//
+//   > h1, > h2, aside, article {
+//     grid-column: 1 / -1;
+//   }
+//   aside {
+//     align-self: flex-end;
+//     padding: 1em;
+//
+//   }
+//   div {
+//     height: 100%;
+//     padding: 0 1emem;
+//   }
+// }
+//
+// .notes {
+//   font-size: .8em;
+// }
+
+
+/////////////////////////////////////
+
+
+
+.price {
+  display: none;
+
+}
+
+.loc {
+  display: block;
+  padding-bottom: .5em;
+}
+.loc::after {
+  content: '';
+  display: none;
+}

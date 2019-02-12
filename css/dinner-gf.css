@@ -1,0 +1,35 @@
+@page {
+  size: 8.5in 14in;
+  margin: 0; }
+body {
+  width: 8.5in;
+  font-size: 1em; }
+  body .panel {
+    width: 8.5in;
+    height: 4.66667in;
+    padding: 1.5em; }
+  body header.panel {
+    padding: 6em; }
+
+aside {
+  padding: 0 1em; }
+
+.divider {
+  height: 1em;
+  margin: .5em; }
+
+#appetizers {
+  width: 85em;
+  text-align: center; }
+  #appetizers > article {
+    padding: 0; }
+    #appetizers > article > * {
+      display: block; }
+
+#sides article {
+  font-size: .9em; }
+
+.notes {
+  font-size: .8em; }
+
+/*# sourceMappingURL=dinner-gf.css.map */

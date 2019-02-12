@@ -1,0 +1,41 @@
+@page {
+  margin: 0;
+  size: 11in 8.5in;
+}
+
+body {
+
+  width: 11in;
+  /* height: 8.5in; */
+
+  margin: 0 auto;
+
+  font-size: 1.3em;
+
+  display: grid;
+  grid-template-columns: repeat(3, calc(11in/3) );
+  grid-auto-rows: calc(8.5in/3) ;
+  align-items: center;
+}
+
+
+/* menu items */
+article {
+  height: 100%;
+
+  padding: 2em;
+  display: flex;
+  flex-flow: column nowrap;
+  // justify-content: center;
+  border: 1px solid #EEE;
+}
+article::before {
+  content: "";
+  height: 1em;
+  margin-bottom: 1.5em;
+  display: block;
+  background-image: url("../images/o.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Lato:100,400,700,900');
+
+@page {
+  margin: 0;
+  size: 11in 17in;
+}
+
+
+html {
+  font-size: 18pt;
+}
+
+body {
+
+  width: 11in;
+  height: 17in;
+}

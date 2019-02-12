@@ -1,0 +1,84 @@
+body {
+  padding: 0;
+  width: 8.5in;
+  margin: 0 auto; }
+  body > .page {
+    width: 8.5in;
+    height: 11in;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr; }
+
+article {
+  width: 3.5in;
+  height: 2in;
+  padding: 0.125in;
+  margin: 0.25in;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center; }
+  article.front {
+    align-self: center; }
+  article.back {
+    align-self: center; }
+  article > * {
+    z-index: 20; }
+  article > header {
+    border: none;
+    padding: .5em; }
+    article > header > * {
+      padding: 0;
+      margin: 0; }
+    article > header .tag {
+      font-size: .7em;
+      height: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between; }
+      article > header .tag > * {
+        width: auto; }
+      article > header .tag h1 {
+        font-weight: 400;
+        line-height: 1.2;
+        padding-left: .2em;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+        font-family: var(--font-heading); }
+  article > figure {
+    height: 1em;
+    margin-bottom: 1.5em;
+    display: block;
+    background-image: url("../images/o.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+  article > main .title {
+    font-style: italic;
+    font-weight: 400; }
+  article > main .org-name {
+    padding-top: .5em;
+    font-family: "Cinzel"; }
+  article::before {
+    background-image: linear-gradient(rgba(150, 120, 30, 0.4), rgba(150, 120, 30, 0.4)), url("../images/paper/ricepaper/ricepaper.png");
+    position: absolute;
+    display: block;
+    content: ' ';
+    top: -.125in;
+    bottom: -.125in;
+    left: -.125in;
+    right: -.125in;
+    z-index: -5; }
+  article::after {
+    position: absolute;
+    display: block;
+    content: ' ';
+    top: -.25in;
+    bottom: -.25in;
+    left: -.25in;
+    right: -.25in;
+    z-index: -10;
+    background: linear-gradient(to right, transparent 0%, transparent calc(.25in - 1px), #999 calc(.25in - 1px), #999 0.25in, transparent 0.25in), linear-gradient(to left, transparent 0%, transparent calc(.25in - 1px), #999 calc(.25in - 1px), #999 0.25in, transparent 0.25in), linear-gradient(to bottom, transparent 0%, transparent calc(.25in - 1px), #999 calc(.25in - 1px), #999 0.25in, transparent 0.25in), linear-gradient(to top, transparent 0%, transparent calc(.25in - 1px), #999 calc(.25in - 1px), #999 0.25in, transparent 0.25in); }
+
+/*# sourceMappingURL=biz-card.css.map */

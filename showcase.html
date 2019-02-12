@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ona Showcase Mockup</title>
+  <style>
+
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700');
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-family: 'Crimson Text', serif;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      text-align: center;
+
+      background-image: linear-gradient(
+          rgba(150, 120, 30, .4),
+          rgba(150, 120, 30, .4)
+        ),
+        url('images/paper/ricepaper/ricepaper.png');
+
+      display: grid;
+      grid-template-columns: 20em calc(100vw - 20em);
+      grid-template-rows: 100vh;
+
+    }
+    header {
+      /* padding: 1em; */
+      margin: 0 1em;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-content: center;
+      align-items: center;
+
+      height: 100vh;
+
+    }
+
+    h1 {
+      font-style: italic;
+      font-weight: 400;
+      font-size: 2em;
+    }
+
+    h2 {
+      font-variant: small-caps;
+      line-height: 1;
+    }
+
+    .star {
+      width: 3em;
+      height: 3em;
+      margin: 0 auto;
+    }
+
+    .logo {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    article {
+      height: 100%;
+      width: 100%;
+
+      display: grid;
+      grid-template-columns: 1fr ;
+      grid-template-rows: 1fr ;
+
+
+    }
+    article > figure{
+      grid-row: 1 / -1;
+      grid-column: 1 / -1;
+      overflow: hidden;
+
+    }
+    article > figure > img {
+      /* width: 100%; */
+      /* max-width: 100%; */
+      /* height: 100%; */
+      /* min-height: 100%; */
+
+      width: 100%;
+      height: 100%;
+      /* height: calc(100vh - 3em); */
+
+      max-width: 100%;
+      max-height: 100%;
+
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+
+    article > main
+     {
+      grid-row: 1 / -1;
+      grid-column: 1 / -1;
+      justify-self: right;
+      align-self: flex-end;
+
+      margin: 3em;
+      padding: 2em;
+
+      font-size: 1.5em;
+
+      background-image: linear-gradient(
+          rgba(150, 120, 30, .4),
+          rgba(150, 120, 30, .4)
+        ),
+        url('images/paper/ricepaper/ricepaper.png');
+
+      box-shadow: 3px 3px 10px ;
+    }
+
+    ul {
+      list-style-type: none;
+      font-size: 1.1em;
+    }
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #000;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="images/ona-logo-bw.svg" alt="">
+    <img class="star" src="images/star2.png" alt="">
+    <h1>carefully sourced<br>globally inspired</h1>
+    <ul>
+      <li><a href="#">Menus</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+    <a href="">Reservations</a>
+  </header>
+  <article>
+    <figure>
+      <img src="images/buffet/india-spices.jpg" alt="">
+    </figure>
+    <main>
+      <h2>international buffet</h2>
+      <h1>India</h1>
+      <h3>April 3rd</h3>
+      <p>4 - 8:30PM</p>
+    </main>
+  </article>
+  <header>
+    <img class="logo" src="images/ona-logo-bw.svg" alt="">
+    <img class="star" src="images/star2.png" alt="">
+    <h1>carefully sourced<br>globally inspired</h1>
+    <ul>
+      <li><a href="#">Menus</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+    <a href="">Reservations</a>
+  </header>
+  <article>
+    <figure>
+      <img src="images/new/chicken.jpg" alt="">
+    </figure>
+    <main>
+      <h2>new at ona</h2>
+      <h1>Duck Sous Vide</h1>
+      <p>duck breast, black rice, beet powder,<br>shiitake confit,
+parsnip purée, micro greens</p>
+    </main>
+  </article>
+</body>
+</html>

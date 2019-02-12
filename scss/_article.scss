@@ -1,0 +1,72 @@
+article {
+  width: 100%;
+  padding: .25em;
+
+  > h1 {
+    font-size: 1em;
+    
+    > .loc::after {
+      content: ''
+    }
+  }
+
+  > p {
+    font-style: italic;
+  }
+
+  > ul {
+    font-style: italic;
+
+    > li {
+      display: inline;
+      list-style: none;
+      white-space: nowrap;
+
+      &::after {
+        display: inline;
+        content: ', ';
+      }
+
+      &:last-child::after {
+        content: '';
+      }
+    }
+  }
+
+  .name {
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .price {
+    font-weight: 700;
+    font-style: normal;
+    &::before {
+      content: ' • ';
+    }
+  }
+
+  .loc {
+    font-variant: small-caps;
+    font-style: normal;
+    font-size: 11pt;
+
+    &::after {
+      content: ' • ';
+    }
+  }
+
+  .abv {
+    font-variant: small-caps;
+    font-style: normal;
+    &::after {
+      content: 'abv';
+      padding-left: .1em;
+    }
+  }
+
+  .recipe {
+    display: none;
+  }
+
+}

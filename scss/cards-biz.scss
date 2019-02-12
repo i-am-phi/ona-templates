@@ -1,0 +1,109 @@
+@import 'mixins';
+
+body {
+	padding: 0;
+	width: 8.5in;
+	margin: 0 auto;
+
+	> .page {
+		// position: relative;
+		width: 8.5in;
+		height: 11in;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-auto-rows: 1fr;
+		// display: flex;
+		// flex-flow: row wrap;
+	}
+}
+
+article {
+	width: 3.5in;
+	height: 2in;
+	padding: 0.125in;
+	margin: 0.25in;
+	position: relative;
+	z-index: 10;
+	// margin: -.125in;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+	&.front {
+		align-self: center;
+	}
+
+	&.back {
+		align-self: center;
+	}
+
+	> * {
+		z-index: 20;
+	}
+
+	> header.panel {
+		border: none;
+    padding: 1.7em 1em;
+		height: 100%;
+		width: 100%;
+
+    > * {
+      padding: 0;
+      margin: 0;
+    }
+		.tag {
+      font-size: .7em;
+		}
+	}
+
+	> figure {
+		height: 1.5em;
+		margin-bottom: 1.5em;
+		display: block;
+		background-image: url("../images/o.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+	}
+
+	> main {
+		.name {}
+
+		.title {
+			font-style: italic;
+			font-weight: 400;
+		}
+
+    .org-name {
+      padding-top: .5em;
+      font-family: "Cinzel";
+    }
+	}
+
+	&::before {
+		//full bleed background
+		@include paper;
+		position: absolute;
+		display: block;
+		content: ' ';
+		top: -.125in;
+		bottom: -.125in;
+		left: -.125in;
+		right: -.125in;
+		z-index: -5;
+	}
+
+	&::after {
+		//crop lines
+		position: absolute;
+		display: block;
+		content: ' ';
+		top: -.25in;
+		bottom: -.25in;
+		left: -.25in;
+		right: -.25in;
+		z-index: -10;
+		background: linear-gradient(to right, transparent 0%, transparent calc(.25in - 1px), #999 calc(.25in - 1px), #999 .25in, transparent .25in), linear-gradient(to left, transparent 0%, transparent calc(.25in - 1px), #999 calc(.25in - 1px), #999 .25in, transparent .25in), linear-gradient(to bottom, transparent 0%, transparent calc(.25in - 1px), #999 calc(.25in - 1px), #999 .25in, transparent .25in), linear-gradient(to top, transparent 0%, transparent calc(.25in - 1px), #999 calc(.25in - 1px), #999 .25in, transparent .25in);
+	}
+}

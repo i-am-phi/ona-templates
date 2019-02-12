@@ -1,0 +1,48 @@
+@page {
+  margin: 0;
+  size: 14in 8.5in; }
+body {
+  width: 14in;
+  font-size: 1.2em; }
+  body .page {
+    width: 14in;
+    height: 8.5in;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start; }
+    body .page > section {
+      width: calc(13.5in/3);
+      height: 100%;
+      border: 1px solid #EEE;
+      padding: 2em;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      align-content: center; }
+      body .page > section > * {
+        padding: 0; }
+      body .page > section > header h1, body .page > section > footer h1 {
+        font-family: "Cinzel";
+        font-weight: 400;
+        font-size: 1.3em;
+        text-transform: uppercase;
+        padding-left: .25em;
+        letter-spacing: .25em; }
+      body .page > section > header h2, body .page > section > footer h2 {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 1.2em; }
+      body .page > section > header .logo, body .page > section > footer .logo {
+        width: 4em;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto; }
+      body .page > section > header > * {
+        margin-bottom: .5em; }
+      body .page > section > footer > * {
+        margin-top: .5em; }
+      body .page > section .divider {
+        height: 1em; }
+
+/*# sourceMappingURL=international.css.map */

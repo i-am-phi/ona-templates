@@ -1,0 +1,23 @@
+.star {
+  height: 2.5em;
+  // width: 1.5em;
+  margin: 0 auto;
+  padding: .5em;
+  text-align: center;
+  // height: 10%;
+}
+
+.divider {
+  border: none;
+
+  height: 1.2em;
+  // width: 1.5em;
+  // margin: 0 auto;
+  // padding: .5em;
+  // text-align: center;
+
+  background: url('../images/star2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

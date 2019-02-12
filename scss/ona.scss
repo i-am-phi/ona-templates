@@ -1,0 +1,32 @@
+/* Ona Styles */
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700&subset=latin-ext');
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700|Cinzel:400,700,900&subset=latin-ext');
+
+
+:root {
+  --font-heading: 'Cinzel', serif;
+  --font-heading-decorative: 'Cinzel Decorative', cursive;
+  --font-body: 'Crimson Text', serif;
+}
+
+
+@import 'mixins';
+@import 'elements';
+@import 'doodads';
+@import 'page';
+@import 'panel';
+@import 'header';
+@import 'section';
+@import 'aside';
+@import 'article';
+
+body {
+
+  color: #000;
+  background-color: #FFF;
+
+  margin: 0 auto;
+
+  text-align: center;
+}

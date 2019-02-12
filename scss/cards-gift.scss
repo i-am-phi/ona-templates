@@ -1,0 +1,152 @@
+@import 'mixins';
+
+$page_width: 3.375in;
+$page_height: 2.125in;
+
+@page {
+  size: $page_width $page_height;
+  margin: 0;
+}
+
+html {
+
+	background: #FFF;
+	height: auto;
+
+}
+body {
+	padding: 0;
+	width: $page_width;
+	height: auto;
+
+	margin: 0 auto;
+
+
+	> .page {
+		// position: relative;
+		width: $page_width;
+		height: $page_height;
+
+		padding: 0;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-content: center;
+
+	}
+}
+
+article {
+	width: $page_width;
+	height: $page_height;
+	// font-size: .8em;
+	padding: 0.125in;
+	margin: 0.0625in;
+	position: relative;
+	z-index: 10;
+	// margin: -.125in;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+	&.front {
+		align-self: center;
+	}
+
+	&.back {
+		align-self: center;
+	}
+
+	> * {
+		z-index: 20;
+	}
+
+	> header.panel {
+		border: none;
+    padding: 2em 1em;
+		height: 100%;
+		width: 100%;
+
+    > * {
+      padding: 0;
+      margin: 0;
+
+    }
+		figure {
+			padding-left: .5em;
+		}
+		.tag {
+      // font-size: 1.3em;
+      font-size: .7em;
+      // height: 100%;
+      // display: flex;
+      // flex-flow: column nowrap;
+      // justify-content: space-between;
+			//
+      // > * {
+      //   width: auto;
+			// 	padding: 0;
+      // }
+      // h1 {
+      //   font-weight: 400;
+      //   line-height: 1.2;
+      //   padding-left: .2em;
+      //   letter-spacing: .2em;
+      //   text-transform: uppercase;
+      //   font-family: var(--font-heading);
+      // }
+			//
+		}
+	}
+
+	> figure {
+		height: 1em;
+		margin-bottom: 1.5em;
+		display: block;
+		background-image: url("../images/o.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+	}
+
+	> main {
+		.name {}
+
+		.title {
+			font-style: italic;
+			font-weight: 400;
+		}
+
+    .org-name {
+      padding-top: .5em;
+      font-family: "Cinzel";
+    }
+	}
+
+	&::before {
+		//full bleed background
+		@include paper;
+		position: absolute;
+		display: block;
+		content: ' ';
+		top: -.0625in;
+		bottom: -.0625in;
+		left: -.0625in;
+		right: -.0625in;
+		z-index: -5;
+	}
+
+	&::after {
+		// //crop lines
+		// position: absolute;
+		// display: block;
+		// content: ' ';
+		// top: -.25in;
+		// bottom: -.25in;
+		// left: -.25in;
+		// right: -.25in;
+		// z-index: -10;
+		// background: linear-gradient(to right, transparent 0%, transparent calc(.25in - 1px), #999 calc(.25in - 1px), #999 .25in, transparent .25in), linear-gradient(to left, transparent 0%, transparent calc(.25in - 1px), #999 calc(.25in - 1px), #999 .25in, transparent .25in), linear-gradient(to bottom, transparent 0%, transparent calc(.25in - 1px), #999 calc(.25in - 1px), #999 .25in, transparent .25in), linear-gradient(to top, transparent 0%, transparent calc(.25in - 1px), #999 calc(.25in - 1px), #999 .25in, transparent .25in);
+	}
+}

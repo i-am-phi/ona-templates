@@ -1,0 +1,57 @@
+/* reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+
+html {
+  height: 100%;
+
+  font-family: var(--font-body);
+  font-size: 12.5pt;
+  line-height: 1.15;
+
+  background-color: #EEE;
+  @include paper;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 1em;
+  font-weight: 700;
+  font-feature-settings: 'kern' 1, 'onum' 1, 'liga' 1;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+
+  --color: #906;
+  --bg: white;
+
+
+  color: var(--color);
+  background: var(--bg);
+
+  text-decoration: none;
+
+  &:link {
+    color: var(--color);
+  }
+
+  &:visited {
+    color: var(--color);
+  }
+
+  &:hover {
+    background: var(--color);
+    color: var(--bg);
+  }
+}

@@ -1,0 +1,43 @@
+.page {
+  // height: 100%;
+  border: #EEE 1px solid;
+  @media print {
+    border: none;
+  }
+
+  @include flex-column;
+
+  > h1 {
+    padding-top: 1em;
+
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.2;
+
+    @include letter-space;
+
+    font-family: var(--font-heading);
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    .price {
+      font-weight: 400;
+      &::before {
+        content: ' • ';
+      }
+    }
+  }
+
+  > h2 {
+    font-family: "Crimson Text", serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.3em;
+  }
+
+  &.featured {
+    font-size: 1.2em;
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Font Test</title>
+	<link rel="stylesheet" href="css/ona.css">
+	<!-- <link rel="stylesheet" href="css/drinks.css"> -->
+	<style>
+		body {
+			width: 30em;
+		}
+
+		.page>* {
+			padding: 2em;
+		}
+
+		section {
+			display: flex;
+			flex-flow: column;
+
+		}
+		.liga {
+			font-family: 'Cinzel Decorative';
+			/* font-family: 'Crimson Text'; */
+			font-variant-ligatures: common-ligatures; /* enable */
+
+			font-feature-settings: "kern" 1, "liga" 1, "swsh" 1, "dlig" 1;
+			font-size: 2em;
+			/* font-style: italic; */
+		}
+		.body {
+			text-align: left;
+			padding-bottom: 1em;
+		}
+		.body::first-letter {
+			/* font-family: 'Cinzel Decorative'; */
+
+			float: left;
+			font-size: 2.5em;
+			padding-right: .1em;
+			margin-top: -.1em;
+			margin-bottom: -.2em;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="page featured">
+
+
+		<section>
+			<h1>Ligatures</h1>
+			<h2>all fonts have special characters for special purposes</h2>
+			<div class="body">Torem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+			<p class="liga">The fish flowed off the fjord looking baffled</p>
+			<p class="liga">check the facts</p>
+			<p class="liga">Read me a Story</p>
+
+			<div class="body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+			<div>
+				<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga adipisci doloremque, sequi, eos molestias earum error quam veniam eum quibusdam animi, minima aliquam autem odit laudantium itaque vero! Ipsa, rem.</div>
+				<div>Soluta repellat quas voluptate. Culpa eligendi qui cumque harum repudiandae reprehenderit eos recusandae fugit, excepturi labore, ex, iusto tempora soluta nobis temporibus modi et? Dolorum corrupti, ducimus voluptatem. Odit, error.</div>
+				<div>Optio neque iusto rem harum cupiditate enim quod voluptas aliquid dolor, quisquam dolore eum est ullam architecto, unde iure, sapiente maiores tenetur fugit, voluptatem reiciendis necessitatibus aliquam repellendus facere laboriosam.</div>
+				<div>Eligendi accusantium fugit quibusdam eius necessitatibus pariatur nihil unde aperiam rerum, tempora laborum molestias nostrum similique doloremque sequi animi, quis. Repellendus tenetur qui quae expedita sit atque explicabo aliquid
+					molestias?</div>
+				<div>Voluptatum mollitia ipsa tempora nesciunt placeat, maxime reiciendis reprehenderit dicta maiores unde aspernatur architecto dignissimos deserunt, est ea iure non quam neque libero. Eveniet quas nemo distinctio suscipit, voluptatum
+					necessitatibus.</div>
+			</div>
+
+		</section>
+
+
+	</div>
+
+
+</body>
+
+</html>

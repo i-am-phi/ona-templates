@@ -1,0 +1,60 @@
+section {
+
+  width: 100%;
+  height: auto;
+
+  > * {
+    padding-bottom: .5em;
+  }
+
+  > h1 {
+    padding-top: 1em;
+
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.2;
+
+    @include letter-space;
+
+    font-family: var(--font-heading);
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    .price {
+      font-weight: 400;
+      &::before {
+        content: ' • ';
+      }
+    }
+  }
+
+  > h2 {
+    font-family: "Crimson Text", serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.3em;
+  }
+
+  &.two-column {
+    display: grid;
+    // width: 100em;
+    grid-template-columns: 1fr 1fr;
+    // grid-template-rows: auto 1fr auto;
+    // grid-auto-rows: 5em 1fr;
+
+    > h1, > h2, aside, article {
+      grid-column: 1 / -1;
+    }
+    aside {
+      align-self: flex-end;
+      padding: 1em;
+
+    }
+    div {
+      height: 100%;
+      padding: 0 1emem;
+    }
+  }
+}

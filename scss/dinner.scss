@@ -1,0 +1,102 @@
+@import 'mixins';
+
+$page_width: 11in;
+$page_height: 17in;
+
+@page {
+  size: $page_width $page_height;
+  margin: 0;
+}
+
+.panel {
+  height: $page_height/3;
+}
+
+body {
+  width: $page_width;
+  font-size: 1.2em;
+
+}
+
+aside {
+  padding: 0 1em;
+}
+
+.divider {
+  height: 1em;
+  margin: .5em;
+}
+
+
+#appetizers {
+  width: 85em;
+  text-align: left;
+}
+
+#appetizers>article>* {
+  display: inline;
+}
+
+#sides article {
+  font-size: .75em;
+}
+
+#brand  {
+  // height: 10em;
+  > h1 {
+    padding: .1em;
+    // font-size: .;
+  }
+
+  .banner-logo {
+    width: 11.11em;
+    margin: 0 auto;
+  }
+
+  article {
+    > ul > li {
+      display: block;
+      &::after {
+        content: '';
+        display: none;
+      }
+    }
+  }
+
+  .address {
+    font-size: .8em;
+  }
+}
+
+
+#purveyors {
+  display: grid;
+  width: 100em;
+  grid-template-columns: 33% 33% 33%;
+  grid-auto-rows: 1fr;
+
+  > h1, > h2 {
+    grid-column: 1 / -1;
+  }
+  > h1 {
+    width: max-content;
+  }
+  > article {
+    font-size: .8em;
+  }
+
+  .loc {
+    &::after {
+      content: '';
+    }
+  }
+}
+
+.notes {
+  font-size: .7em;
+  font-style: italic;
+  grid-column: 1 / -1;
+  padding-top: 1em;
+  margin-top: 1em;
+  border-top: 2px #CCC solid;
+}

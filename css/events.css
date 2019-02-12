@@ -1,0 +1,87 @@
+@page {
+  margin: 0;
+  size: 8.5in 14in; }
+hr {
+  border-top: .1em solid #CCC;
+  width: 12em;
+  margin: .2em auto; }
+
+body {
+  width: 8.5in;
+  height: 14in;
+  font-size: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between; }
+  body .page {
+    width: 8.5in;
+    height: 14in; }
+  body header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+    height: 10em;
+    padding: 2em 4em; }
+    body header .logo {
+      height: auto;
+      width: 10em; }
+    body header .graphic {
+      margin: 0 1em;
+      width: 8em; }
+    body header > .tag {
+      width: auto;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center; }
+      body header > .tag > h1 {
+        font-family: 'Cinzel Decorative';
+        font-weight: 400;
+        font-size: 1.5em;
+        text-transform: none;
+        padding: .2em 0; }
+  body .panel {
+    width: 100%;
+    height: auto;
+    border: none;
+    padding: 1.5em; }
+    body .panel .options {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-content: center;
+      align-items: center; }
+      body .panel .options > h2 {
+        padding: .25em;
+        font-style: italic;
+        font-weight: 400; }
+    body .panel .tag {
+      text-align: center;
+      font-size: 1em; }
+      body .panel .tag h1 {
+        font-size: 1.1em;
+        width: min-content;
+        margin: 0 auto; }
+
+aside {
+  padding: 0 1em; }
+
+.divider {
+  height: 1em;
+  margin: .5em; }
+
+section > h1 {
+  padding-top: 0; }
+
+.price {
+  display: none; }
+
+.loc {
+  display: block;
+  padding-bottom: .5em; }
+
+.loc::after {
+  content: '';
+  display: none; }
+
+/*# sourceMappingURL=events.css.map */

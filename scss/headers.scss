@@ -1,0 +1,70 @@
+@import 'mixins';
+
+@page {
+  margin: 0;
+  size: 11in 17in;
+}
+
+body {
+  width: 11in;
+  font-size: 1.2em;
+
+  header.panel {
+    font-size: 1em;
+    padding: 6em;
+    .logo {
+      height: auto;
+      width: 14em;
+      margin: 0 auto;
+
+    }
+  }
+  .panel {
+    width: 11in;
+    height: calc(17in/3);
+
+    padding: 1.5em;
+
+    section {
+      padding: 0;
+    }
+  }
+}
+
+.tag {
+
+  font-size: 1.35em;
+
+  > * {
+    padding: 0;
+  }
+
+  p {
+    font-size: 1.5em;
+    font-style: italic;
+  }
+}
+
+.tag2 {
+
+  font-size: 1.2em;
+  width: auto;
+  > * {
+    padding: .1em 0;
+  }
+
+  p {
+    // font-size: 1.5em;
+    font-style: italic;
+  }
+}
+
+
+
+ul {
+  list-style: circle;
+
+  > li {
+    display: block;
+  }
+}

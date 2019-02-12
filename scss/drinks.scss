@@ -1,0 +1,78 @@
+@import 'mixins';
+
+$page_width: 4.25in;
+$page_height: 14in;
+
+@page {
+  size: $page_width $page_height;
+  margin: 0;
+}
+
+body {
+  width: $page_width;
+}
+
+.page {
+  width: $page_width;
+  height: $page_height;
+
+  padding: 2em;
+
+  > section {
+    // height: 100%;
+
+    @include flex-column;
+
+  }
+}
+
+
+.liquor {
+  > ul > li {
+    display: block;
+    &::after {
+      content: '';
+      display: none;
+    }
+  }
+}
+
+#cocktails {
+  // display: grid;
+  // grid-template-columns: 50% 50%;
+  // grid-auto-rows: 1fr;
+
+  > h1, > h2 {
+    grid-column: 1 / -1;
+  }
+  > h1 {
+    width: max-content;
+    margin: 0 auto;
+  }
+}
+
+aside {
+  h1 {
+    font-style: normal;
+    font-weight: 400;
+  }
+}
+
+article {
+  li::after {
+    display: none;
+  }
+}
+article.list {
+  li {
+    display: block;
+    padding-bottom: .25em;
+
+    .loc::after{
+      display: none;
+    }
+    &::after {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@page {
+  margin: 0;
+  size: 11in 8.5in ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14pt;
+  line-height: 1.25em;
+  background-color: #EEE;
+}
+
+body {
+  color: #333;
+  background-color: #FFF;
+
+  font-family: "Adobe Caslon Pro", serif;
+  text-align: center;
+
+  width: 11in;
+  height: 8.5in;
+
+  margin: 0 auto;
+  /* padding: .5in; */
+
+  display: grid;
+  /* grid-gap: .5in; */
+  grid-template-columns: repeat(3, 3.5in);
+  grid-auto-rows: 2in;
+  justify-content: center;
+  align-content: center;
+}
+
+iframe {
+  width: 3.5in;
+  height: 2in;
+  border: none;
+}
