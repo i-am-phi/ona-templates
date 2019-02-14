@@ -66,6 +66,14 @@ body {
         padding: 0;
       }
     }
+    // .tag {
+    //   text-align: center;
+    //   font-size: 1em;
+    //   h1 {
+    //     font-size: 1.1em;
+    //     width: min-content;
+    //     margin: 0 auto;
+    //   }
   }
   .panel {
     width: 100%;
@@ -93,19 +101,10 @@ body {
     section {
       // padding-left: 2em;
       // padding-right: 2em;
-    }
-
-    .tag {
-      text-align: center;
-      font-size: 1em;
-      h1 {
-        font-size: 1.1em;
-        width: min-content;
-        margin: 0 auto;
+      > * {
+        padding-bottom: .25em;
       }
-
     }
-
   }
 
 }
