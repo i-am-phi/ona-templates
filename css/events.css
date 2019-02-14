@@ -15,36 +15,42 @@ body {
   justify-content: space-between; }
   body .page {
     width: 8.5in;
-    height: 14in; }
+    height: 14in;
+    padding: 2em; }
   body header {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
-    height: 10em;
-    padding: 2em 4em; }
+    height: auto;
+    padding: 0 2em;
+    padding-bottom: 1em; }
     body header .logo {
-      height: auto;
-      width: 10em; }
+      height: 3.75em;
+      width: auto;
+      margin: 0; }
     body header .graphic {
-      margin: 0 1em;
-      width: 8em; }
+      margin: 0;
+      height: 4em;
+      width: auto; }
     body header > .tag {
       width: auto;
+      height: 100%;
       display: flex;
+      margin: 0;
       flex-flow: column nowrap;
-      justify-content: center; }
+      justify-content: space-between; }
       body header > .tag > h1 {
         font-family: 'Cinzel Decorative';
         font-weight: 400;
-        font-size: 1.5em;
+        font-size: 1.2em;
         text-transform: none;
-        padding: .2em 0; }
+        padding: 0; }
   body .panel {
     width: 100%;
     height: auto;
     border: none;
-    padding: 1.5em; }
+    padding: 0; }
     body .panel .options {
       display: flex;
       flex-flow: row nowrap;

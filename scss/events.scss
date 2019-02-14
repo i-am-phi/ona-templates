@@ -22,37 +22,48 @@ body {
   .page {
     width: 8.5in;
     height: 14in;
+    padding: 2em;
+
   }
 
   header {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
-    height: 10em;
-    padding: 2em 4em;
+
+    height: auto;
+    padding: 0 2em;
+    padding-bottom: 1em;
 
     .logo {
-      height: auto;
-      width: 10em;
+      height: 3.75em;
+      width: auto;
+      margin: 0;
     }
     .graphic {
-      margin: 0 1em;
-      width: 8em;
+      margin: 0;
+      height: 4em;
+      width: auto;
     }
     > .tag {
       width: auto;
+      height: 100%;
+
       display: flex;
+
+      margin: 0;
+
       flex-flow: column nowrap;
-      justify-content: center;
+      justify-content: space-between;
 
       > h1 {
         font-family: 'Cinzel Decorative';
         font-weight: 400;
-        font-size: 1.5em;
+        font-size: 1.2em;
 
         text-transform: none;
-        padding: .2em 0;
+        padding: 0;
       }
     }
   }
@@ -62,7 +73,7 @@ body {
     height: auto;
     border: none;
 
-    padding: 1.5em;
+    padding: 0;
 
 
     .options {
