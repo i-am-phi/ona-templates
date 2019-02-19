@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @page {
   margin: 0;
   size: 11in 8.5in; }
@@ -18,15 +19,17 @@ article {
   display: flex;
   flex-flow: column nowrap;
   border: 1px solid #EEE; }
-
-article::before {
-  content: "";
-  height: 1em;
-  margin-bottom: 1.5em;
-  display: block;
-  background-image: url("../images/o.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center; }
+  article::before {
+    content: "";
+    height: 1em;
+    margin-bottom: 1.5em;
+    display: block;
+    background-image: url("../images/o.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+  article.gf.veg::after {
+    content: '• GF • VEG •';
+    padding-top: 1em; }
 
 /*# sourceMappingURL=cards.css.map */
