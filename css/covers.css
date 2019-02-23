@@ -1,11 +1,11 @@
 @page {
-  size: 1200px 900px;
+  size: 820px 312px;
   margin: 0; }
 html {
   background: white; }
 
 body {
-  width: 1200px;
+  width: 820px;
   text-align: center; }
 
 header {
@@ -17,8 +17,8 @@ header {
 article {
   page-break-before: always;
   background: none;
-  width: 1200px;
-  height: 900px;
+  width: 820px;
+  height: 312px;
   padding: 0;
   margin: 1em auto;
   display: grid;
@@ -54,6 +54,8 @@ article {
     margin-bottom: 6em;
     padding: 1em;
     font-size: 1.4em;
+    justify-self: right;
+    font-size: 1em;
     background-image: linear-gradient(rgba(150, 120, 30, 0.4), rgba(150, 120, 30, 0.4)), url("../images/paper/ricepaper/ricepaper.png");
     box-shadow: 3px 3px 10px; }
     article > main > h1 {
@@ -78,8 +80,5 @@ article {
 .covers article {
   width: 820px;
   height: 312px; }
-  .covers article > main {
-    justify-self: right;
-    font-size: 1em; }
 
-/*# sourceMappingURL=banners2.css.map */
+/*# sourceMappingURL=covers.css.map */

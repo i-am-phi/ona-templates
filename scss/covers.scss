@@ -2,8 +2,8 @@
 
 @import 'mixins';
 
-$page_width: 1200px;
-$page_height: 900px;
+$page_width: 820px;
+$page_height: 312px;
 
 @page {
   size: $page_width $page_height;
@@ -99,6 +99,9 @@ article {
     padding: 1em;
     font-size: 1.4em;
 
+    justify-self: right;
+    font-size: 1em;
+
     @include paper;
 
     box-shadow: 3px 3px 10px ;
@@ -139,8 +142,6 @@ article {
     width: 820px;
     height: 312px;
     > main {
-      justify-self: right;
-      font-size: 1em;
     }
   }
 }
