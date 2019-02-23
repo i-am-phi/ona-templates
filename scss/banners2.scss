@@ -131,5 +131,14 @@ article {
     }
   }
 
+  &.facebook-cover {
+    width: 820px;
+    height: 312px;
+    > main {
+      justify-self: right;
+      font-size: 1em;
+    }
+  }
+
 
 }
