@@ -25,14 +25,14 @@ html {
   article {
     h1 {
       display: block;
-      display: inline;
+      // display: inline;
     }
     div, p {
       display: inline;
       text-align: center;
     }
     p, ul {
-      display: none;
+      // display: none;
     }
     .size {
       display: inline;
@@ -43,7 +43,7 @@ html {
     }
     .option {
       display: block;
-      display: none;
+      // display: none;
       font-style: italic;
 
     }

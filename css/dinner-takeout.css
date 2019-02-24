@@ -14,13 +14,10 @@ html {
     .panel section > h2 {
       font-size: .85em; }
   .panel article h1 {
-    display: block;
-    display: inline; }
+    display: block; }
   .panel article div, .panel article p {
     display: inline;
     text-align: center; }
-  .panel article p, .panel article ul {
-    display: none; }
   .panel article .size {
     display: inline;
     font-style: italic; }
@@ -28,7 +25,6 @@ html {
       display: none; }
   .panel article .option {
     display: block;
-    display: none;
     font-style: italic; }
 
 header.panel {
