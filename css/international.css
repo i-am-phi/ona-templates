@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @page {
   margin: 0;
   size: 14in 8.5in; }
@@ -42,6 +43,15 @@ body {
         margin-bottom: .5em; }
       body .page > section > footer > * {
         margin-top: .5em; }
+      body .page > section article h1::after {
+        font-style: italic;
+        font-weight: 400; }
+      body .page > section article.veg h1::after {
+        content: ' • VEG'; }
+      body .page > section article.gf h1::after {
+        content: ' • GF'; }
+      body .page > section article.gf.veg h1::after {
+        content: ' • GF • VEG'; }
       body .page > section .divider {
         height: 1em; }
 

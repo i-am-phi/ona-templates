@@ -40,6 +40,14 @@ article {
     background-position: center;
   }
 
+  &.veg::after {
+    content: '• VEG •';
+    padding-top: 1em;
+  }
+  &.gf::after {
+    content: '• GF •';
+    padding-top: 1em;
+  }
   &.gf.veg::after {
     content: '• GF • VEG •';
     padding-top: 1em;

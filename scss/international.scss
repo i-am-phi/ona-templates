@@ -68,6 +68,26 @@ body {
       }
 
       article {
+        h1::after {
+          font-style: italic;
+          font-weight: 400;
+        }
+        &.veg{
+
+          h1::after {
+            content: ' • VEG';
+          }
+        }
+        &.gf {
+          h1::after {
+            content: ' • GF';
+          }
+        }
+        &.gf.veg {
+          h1::after {
+            content: ' • GF • VEG';
+          }
+        }
 
       }
 

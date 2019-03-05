@@ -28,6 +28,12 @@ article {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center; }
+  article.veg::after {
+    content: '• VEG •';
+    padding-top: 1em; }
+  article.gf::after {
+    content: '• GF •';
+    padding-top: 1em; }
   article.gf.veg::after {
     content: '• GF • VEG •';
     padding-top: 1em; }
