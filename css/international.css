@@ -39,8 +39,10 @@ body {
         height: auto;
         margin-right: auto;
         margin-left: auto; }
-      body .page > section > header > * {
-        margin-bottom: .5em; }
+      body .page > section > header {
+        height: auto; }
+        body .page > section > header > * {
+          margin-bottom: .5em; }
       body .page > section > footer > * {
         margin-top: .5em; }
       body .page > section article h1::after {
