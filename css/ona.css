@@ -194,7 +194,7 @@ aside {
 
 article {
   width: 100%;
-  padding: .25em; }
+  padding: .35em 0; }
   article > h1 {
     font-size: 1em; }
     article > h1 > .loc::after {
