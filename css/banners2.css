@@ -1,11 +1,11 @@
 @page {
-  size: 1200px 900px;
+  size: 900px 900px;
   margin: 0; }
 html {
   background: white; }
 
 body {
-  width: 1200px;
+  width: 900px;
   text-align: center; }
 
 header {
@@ -17,7 +17,7 @@ header {
 article {
   page-break-before: always;
   background: none;
-  width: 1200px;
+  width: 900px;
   height: 900px;
   padding: 0;
   margin: 1em auto;

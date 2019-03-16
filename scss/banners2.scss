@@ -2,8 +2,9 @@
 
 @import 'mixins';
 
-$page_width: 1200px;
+$page_width: 900px;
 $page_height: 900px;
+
 
 @page {
   size: $page_width $page_height;
@@ -12,7 +13,6 @@ $page_height: 900px;
 
 html {
   background: white;
-
 }
 
 body {
