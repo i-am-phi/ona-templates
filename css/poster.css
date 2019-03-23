@@ -1,23 +1,29 @@
 @page {
   margin: 0;
-  size: 8.5in 11in; }
+  size: 8.5in 14in; }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  font-size: 1.7em; }
+
 .page {
   width: 8.5in;
-  height: 11in;
-  padding: 2em; }
+  height: 14in;
+  padding: 2em;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: space-between; }
   .page > header {
     grid-area: header;
     width: 100%;
     height: 100%;
     background: #EEE;
     display: flex;
-    flex-direction: column;
-    font-size: .9em; }
+    flex-flow: column nowrap;
+    align-content: space-between; }
     .page > header > * {
       padding: .5em; }
     .page > header h1 {
@@ -31,7 +37,7 @@
       font-style: italic;
       font-weight: 400; }
     .page > header img {
-      width: 2in;
+      width: 15em;
       padding: 1em; }
     .page > header .banner {
       width: 100%;
@@ -41,10 +47,9 @@
       object-position: 50% 50%; }
   .page > main, .page > section {
     grid-area: main;
-    padding-left: 2em;
-    display: grid;
-    align-items: space-evenly;
-    font-size: .9em; }
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center; }
     .page > main > h1, .page > section > h1 {
       font-size: 1.5em; }
     .page > main footer, .page > section footer {
@@ -73,12 +78,14 @@ article .price {
   display: inline; }
 
 .page.front {
+  height: 100%;
   display: grid;
   grid-template-columns: 2.5in 1fr;
   grid-template-areas: "header main";
   align-items: space-between; }
 
 .page.back {
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 2.5in;
   grid-template-areas: "main header";
@@ -86,4 +93,4 @@ article .price {
   .page.back > main, .page.back > section {
     padding-right: 2em; }
 
-/*# sourceMappingURL=flyer.css.map */
+/*# sourceMappingURL=poster.css.map */
