@@ -1,0 +1,183 @@
+// @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700');
+
+@import 'mixins';
+
+
+
+// @page {
+//   size: $page_width $page_height;
+//   margin: 0;
+// }
+
+html {
+  background: white;
+}
+
+body {
+
+  // padding: 2em;
+  text-align: center;
+}
+
+
+article {
+
+  page-break-before: always;
+  background: none;
+
+  width: 100%;
+  height: 100%;
+  padding: 0;
+
+
+  margin: 1em auto;
+
+  @media print {
+    margin:0;
+  }
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+
+  > figure {
+
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    overflow: hidden;
+
+    > img {
+      width: 100%;
+      height: 100%;
+
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+  }
+
+  > main {
+    width: auto;
+    margin: 3em;
+    margin-bottom: 4em;
+    padding: 1em;
+
+    z-index: 10;
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: flex-end;
+
+    font-size: 1.6em;
+
+    @include paper;
+
+    box-shadow: 3px 3px 10px ;
+
+    > * {
+      margin: .25em auto;
+    }
+    > h1 {
+      font-family: "Cinzel";
+      @include letter-space;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    > h2 {
+      text-align: center;
+
+    }
+    > h3 {
+      font-style: italic;
+      font-weight: 400;
+      text-align: center;
+
+    }
+
+    > .logo {
+      width: 6em;
+      margin: 1em auto;
+    }
+
+    &.top {
+      align-self: flex-start;
+    }
+  }
+
+
+}
+
+article.post {
+  $page_width: 900px;
+  $page_height: 900px;
+
+
+  width: $page_width;
+  height: $page_height;
+
+}
+
+article.cover {
+  $page_width: 820px;
+  $page_height: 312px;
+
+
+  width: $page_width;
+  height: $page_height;
+
+
+
+  > main {
+    // position: relative;
+    // width: auto;
+    // // bottom: 2em;
+    //
+    // z-index: 10;
+    // grid-row: 1 / -1;
+    // grid-column: 1 / -1;
+    // justify-self: center;
+    // align-self: flex-end;
+    margin: 1em;
+    // margin-bottom: 6em;
+    // padding: 1em;
+    // font-size: 1.4em;
+    //
+    // justify-self: right;
+    font-size: 1em;
+    //
+    // @include paper;
+    //
+    // box-shadow: 3px 3px 10px ;
+    //
+    // > h1 {
+    //   font-family: "Cinzel";
+    //   @include letter-space;
+    //   font-weight: 400;
+    //   text-align: center;
+    // }
+    //
+    // > h2 {
+    //   text-align: center;
+    //
+    // }
+    // > h3 {
+    //   font-style: italic;
+    //   font-weight: 400;
+    //   text-align: center;
+    //
+    // }
+    //
+    // > .logo {
+    //   width: 10em;
+    //   margin: .5em auto;
+    // }
+    //
+    // &.top {
+    //   align-self: flex-start;
+    // }
+  }
+
+
+}
