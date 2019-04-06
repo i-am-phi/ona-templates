@@ -86,6 +86,12 @@
       border-top: 1px #CCC solid;
 
     }
+    .notes {
+      font-size: .75em;
+      > p {
+        line-height: 1.4;
+      }
+    }
     #appetizers {
       article {
         padding: 0;

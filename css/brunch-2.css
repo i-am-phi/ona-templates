@@ -53,6 +53,10 @@
       padding-top: 1em;
       margin-top: 1em;
       border-top: 1px #CCC solid; }
+    .page > main .notes, .page > section .notes {
+      font-size: .75em; }
+      .page > main .notes > p, .page > section .notes > p {
+        line-height: 1.4; }
     .page > main #appetizers article, .page > section #appetizers article {
       padding: 0; }
 
