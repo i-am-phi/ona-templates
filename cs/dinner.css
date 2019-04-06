@@ -1,0 +1,65 @@
+@page {
+  size: 11in 17in;
+  margin: 0; }
+.panel {
+  height: 5.66667in; }
+
+body {
+  width: 11in;
+  font-size: 1.2em; }
+
+aside {
+  padding: 0 1em; }
+
+.divider {
+  height: 1em;
+  margin: .5em; }
+
+#appetizers {
+  width: 85em;
+  text-align: left; }
+
+#appetizers > article > * {
+  display: inline; }
+
+#sides article {
+  font-size: .75em; }
+
+#brand > h1 {
+  padding: .1em; }
+#brand .banner-logo {
+  width: 11.11em;
+  margin: 0 auto; }
+#brand article > ul > li {
+  display: block; }
+  #brand article > ul > li::after {
+    content: '';
+    display: none; }
+#brand .address {
+  font-size: .8em; }
+
+#purveyors {
+  display: grid;
+  width: 100em;
+  grid-template-columns: 33% 33% 33%;
+  grid-auto-rows: 1fr; }
+  #purveyors > h1, #purveyors > h2 {
+    grid-column: 1 / -1; }
+  #purveyors > h1 {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto; }
+  #purveyors > article {
+    font-size: .8em; }
+  #purveyors .loc::after {
+    content: ''; }
+
+.notes {
+  font-size: .7em;
+  font-style: italic;
+  grid-column: 1 / -1;
+  padding-top: 1em;
+  margin-top: 1em;
+  border-top: 2px #CCC solid; }
+
+/*# sourceMappingURL=dinner.css.map */

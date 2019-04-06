@@ -1,0 +1,65 @@
+@page {
+  size: 4.25in 11in;
+  margin: 0; }
+html {
+  font-size: 11pt; }
+
+.panel {
+  height: 3.66667in;
+  height: auto;
+  flex-flow: column;
+  padding: 0 2em; }
+  .panel section {
+    padding: 1em; }
+    .panel section > h2 {
+      font-size: .85em; }
+  .panel article h1 {
+    display: block; }
+  .panel article div, .panel article p {
+    display: inline;
+    text-align: center; }
+  .panel article .size {
+    display: inline;
+    font-style: italic; }
+    .panel article .size .label {
+      display: none; }
+  .panel article .option {
+    display: block;
+    font-style: italic; }
+
+header.panel {
+  flex-flow: row;
+  align-items: center;
+  padding: 1em; }
+  header.panel figure {
+    height: 4em;
+    background-position: center; }
+
+body {
+  width: 4.25in;
+  font-size: 1.2em; }
+
+aside {
+  padding: 0 1em; }
+
+.divider {
+  height: 1em;
+  margin: .5em; }
+
+#sides article {
+  font-size: .75em; }
+
+#brand > h1 {
+  padding: .1em; }
+#brand .banner-logo {
+  width: 11.11em;
+  margin: 0 auto; }
+#brand article > ul > li {
+  display: block; }
+  #brand article > ul > li::after {
+    content: '';
+    display: none; }
+#brand .address {
+  font-size: .8em; }
+
+/*# sourceMappingURL=dinner-takeout.css.map */

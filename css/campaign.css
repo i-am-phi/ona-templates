@@ -30,8 +30,7 @@ article {
       object-position: 50% 50%; }
   article > main {
     width: auto;
-    margin: 3em;
-    margin-bottom: 4em;
+    margin: 1em;
     padding: 1em;
     z-index: 10;
     grid-row: 1 / -1;
@@ -61,6 +60,9 @@ article {
       margin: 0 auto .5em auto; }
     article > main.top {
       align-self: flex-start; }
+    article > main.left {
+      justify-self: left;
+      margin-left: 200px; }
 
 article.post {
   width: 900px;
@@ -70,7 +72,6 @@ article.cover {
   width: 820px;
   height: 312px; }
   article.cover > main {
-    margin: 1em;
     font-size: 1em; }
 
 /*# sourceMappingURL=campaign.css.map */

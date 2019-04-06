@@ -1,0 +1,15 @@
+body {
+  height: 100%;
+  /* padding: 2em 3em; */ }
+
+main {
+  height: 100%; }
+
+.page {
+  padding: 2em; }
+
+body .page > section > h1 {
+  padding: 0;
+  padding-top: 1em; }
+
+/*# sourceMappingURL=specials.css.map */

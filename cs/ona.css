@@ -1,0 +1,247 @@
+@charset "UTF-8";
+/* Ona Styles */
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700|Cinzel:400,700,900&subset=latin-ext");
+:root {
+  --font-heading: 'Cinzel', serif;
+  --font-heading-decorative: 'Cinzel Decorative', cursive;
+  --font-body: 'Crimson Text', serif; }
+
+/* reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none; }
+
+html {
+  height: 100%;
+  font-family: var(--font-body);
+  font-size: 12.5pt;
+  line-height: 1.15;
+  background-color: #EEE;
+  background-image: linear-gradient(rgba(150, 120, 30, 0.4), rgba(150, 120, 30, 0.4)), url("../images/paper/ricepaper/ricepaper.png"); }
+
+h1,
+h2,
+h3 {
+  font-size: 1em;
+  font-weight: 700;
+  font-feature-settings: 'kern' 0, 'onum' 0, 'liga' 0; }
+
+p {
+  font-feature-settings: 'kern' 0, 'onum' 0, 'liga' 0; }
+
+img {
+  display: block;
+  margin: 0 auto; }
+
+a {
+  --color: #906;
+  --bg: white;
+  color: var(--color);
+  background: var(--bg);
+  text-decoration: none; }
+  a:link {
+    color: var(--color); }
+  a:visited {
+    color: var(--color); }
+  a:hover {
+    background: var(--color);
+    color: var(--bg); }
+
+.star {
+  height: 2.5em;
+  margin: 0 auto;
+  padding: .5em;
+  text-align: center; }
+
+.divider {
+  border: none;
+  height: 1.2em;
+  background: url("../images/star2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.page {
+  border: #EEE 1px solid;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-content: center; }
+  @media print {
+    .page {
+      border: none; } }
+  .page > h1 {
+    padding-top: 1em;
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-left: 0.2em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-family: var(--font-heading); }
+    .page > h1:first-child {
+      padding-top: 0; }
+    .page > h1 .price {
+      font-weight: 400; }
+      .page > h1 .price::before {
+        content: ' • '; }
+  .page > h2 {
+    font-family: "Crimson Text", serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.3em; }
+  .page.featured {
+    font-size: 1.2em; }
+
+.panel {
+  height: 100%;
+  width: 100%;
+  padding: 1.5em;
+  border: #EEE 1px solid;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center; }
+  @media print {
+    .panel {
+      border: none; } }
+  .panel > section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-content: center;
+    padding-left: 2em;
+    padding-right: 2em; }
+  .panel.featured > section {
+    font-size: 1.15em; }
+
+header {
+  margin: 0 auto;
+  height: 8em;
+  width: 100%;
+  margin-bottom: .5em; }
+  header > figure {
+    width: 100%;
+    height: 100%;
+    background: url("../images/ona-logo-bw@4x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+  header > .tag {
+    width: min-content;
+    height: 100%;
+    padding: 0;
+    font-size: 1.38em; }
+    header > .tag > * {
+      padding: 0; }
+    header > .tag p {
+      font-size: 1.5em;
+      font-style: italic; }
+  header.panel {
+    font-size: 1em;
+    padding: 6em;
+    margin-bottom: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center; }
+    header.panel > figure {
+      background-position: left; }
+
+section {
+  width: 100%;
+  height: auto; }
+  section > * {
+    padding-bottom: .5em; }
+  section > h1 {
+    padding-top: 1em;
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-left: 0.2em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-family: var(--font-heading); }
+    section > h1:first-child {
+      padding-top: 0; }
+    section > h1 .price {
+      font-weight: 400; }
+      section > h1 .price::before {
+        content: ' • '; }
+  section > h2 {
+    font-family: "Crimson Text", serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.3em; }
+  section.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    section.two-column > h1, section.two-column > h2, section.two-column aside, section.two-column article {
+      grid-column: 1 / -1; }
+    section.two-column aside {
+      align-self: flex-end;
+      padding: 1em; }
+    section.two-column div {
+      height: 100%;
+      padding: 0 1emem; }
+
+aside {
+  padding: 0 2em;
+  font-size: 1.4em;
+  font-style: italic; }
+  aside p {
+    padding: .25em; }
+
+article {
+  width: 100%;
+  padding: .35em 0; }
+  article > h1 {
+    font-size: 1em; }
+    article > h1 > .loc::after {
+      content: ""; }
+  article > p {
+    font-style: italic; }
+  article > ul {
+    font-style: italic; }
+    article > ul > li {
+      display: inline;
+      list-style: none;
+      white-space: nowrap; }
+      article > ul > li::after {
+        display: inline;
+        content: ', '; }
+      article > ul > li:last-child::after {
+        content: ''; }
+  article .name {
+    font-weight: bold;
+    font-style: normal; }
+  article .price {
+    font-weight: 700;
+    font-style: normal; }
+    article .price::before {
+      content: ' • '; }
+  article .loc {
+    font-variant: small-caps;
+    font-style: normal;
+    font-size: 11.5pt; }
+    article .loc::after {
+      content: ' • '; }
+  article .abv {
+    font-variant: small-caps;
+    font-style: normal; }
+    article .abv::after {
+      content: 'abv';
+      padding-left: .1em; }
+  article .recipe {
+    display: none; }
+
+body {
+  color: #000;
+  background-color: #FFF;
+  margin: 0 auto;
+  text-align: center; }
+
+/*# sourceMappingURL=ona.css.map */
