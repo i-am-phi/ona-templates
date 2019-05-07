@@ -49,9 +49,17 @@ body {
     grid-area: main;
     display: flex;
     flex-flow: column nowrap;
-    align-content: center; }
+    align-content: center;
+    justify-content: space-around;
+    height: 100%;
+    font-size: 2em; }
     .page > main > h1, .page > section > h1 {
-      font-size: 1.5em; }
+      font-size: 1.5em;
+      margin: 0;
+      padding: 0; }
+    .page > main h2, .page > main .divider, .page > section h2, .page > section .divider {
+      margin: 0;
+      padding: 0; }
     .page > main footer, .page > section footer {
       font-size: .8em;
       padding-top: 1em;

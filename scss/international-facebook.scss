@@ -14,91 +14,91 @@ body {
   font-size: 1.2em;
 
   .page {
-    width:$width;
-    height: 8.5in;
+    width: $width;
+    height: $height;
 
-    padding: 0;
-
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
+    // padding: 0;
+    //
+    // display: flex;
+    // flex-flow: row nowrap;
+    // justify-content: flex-start;
 
 
     > section {
-      width: calc($width/3);
-      height: 100%;
-      border: 1px solid #EEE;
-      padding: 2em;
+      width: 600px;
+      // height: 100%;
+      // border: 1px solid #EEE;
+      // padding: 2em;
+      //
+      // @include flex-column;
 
-      @include flex-column;
-
-      > * {
-        padding: 0;
-      }
-
-      > header, > footer {
-        h1 {
-          font-family: "Cinzel";
-          font-weight: 400;
-          font-size: 1.3em;
-          text-transform: uppercase;
-          padding-left: .25em;
-          letter-spacing: .25em;
-        }
-        h2 {
-          font-style: italic;
-          font-weight: 400;
-          font-size: 1.2em;
-        }
-        .logo {
-          width: 4em;
-          height: auto;
-          margin-right: auto;
-          margin-left: auto;
-        }
-      }
-
-      > header {
-        height: auto;
-        > * {
-          margin-bottom: .5em;
-        }
-      }
-
-      > footer {
-        > * {
-          margin-top: .5em;
-        }
-      }
-
-      article {
-        h1::after {
-          font-style: italic;
-          font-weight: 400;
-          font-size: 10pt;
-        }
-        &.veg{
-
-          h1::after {
-            content: ' • VEG';
-          }
-        }
-        &.gf {
-          h1::after {
-            content: ' • GF';
-          }
-        }
-        &.gf.veg {
-          h1::after {
-            content: ' • GF • VEG';
-          }
-        }
-
-      }
-
-      .divider {
-        height: 1em;
-      }
+      // > * {
+      //   padding: 0;
+      // }
+      //
+      // > header, > footer {
+      //   h1 {
+      //     font-family: "Cinzel";
+      //     font-weight: 400;
+      //     font-size: 1.3em;
+      //     text-transform: uppercase;
+      //     padding-left: .25em;
+      //     letter-spacing: .25em;
+      //   }
+      //   h2 {
+      //     font-style: italic;
+      //     font-weight: 400;
+      //     font-size: 1.2em;
+      //   }
+      //   .logo {
+      //     width: 4em;
+      //     height: auto;
+      //     margin-right: auto;
+      //     margin-left: auto;
+      //   }
+      // }
+      //
+      // > header {
+      //   height: auto;
+      //   > * {
+      //     margin-bottom: .5em;
+      //   }
+      // }
+      //
+      // > footer {
+      //   > * {
+      //     margin-top: .5em;
+      //   }
+      // }
+      //
+      // article {
+      //   h1::after {
+      //     font-style: italic;
+      //     font-weight: 400;
+      //     font-size: 10pt;
+      //   }
+      //   &.veg{
+      //
+      //     h1::after {
+      //       content: ' • VEG';
+      //     }
+      //   }
+      //   &.gf {
+      //     h1::after {
+      //       content: ' • GF';
+      //     }
+      //   }
+      //   &.gf.veg {
+      //     h1::after {
+      //       content: ' • GF • VEG';
+      //     }
+      //   }
+      //
+      // }
+      //
+      // .divider {
+      //   height: 1em;
+      // }
     }
   }
 

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @page {
   margin: 0;
   size: 14in 8.5in; }
@@ -24,7 +23,7 @@ body {
       body .page > section > * {
         padding: 0; }
       body .page > section > header h1, body .page > section > footer h1 {
-        font-family: "Cinzel";
+        font-family: var(--font-heading);
         font-weight: 400;
         font-size: 1.3em;
         text-transform: uppercase;
@@ -48,13 +47,18 @@ body {
       body .page > section article h1::after {
         font-style: italic;
         font-weight: 400;
-        font-size: 10pt; }
-      body .page > section article.veg h1::after {
-        content: ' • VEG'; }
+        font-size: 10pt;
+        padding: 0 .5em; }
       body .page > section article.gf h1::after {
-        content: ' • GF'; }
+        content: 'GF '; }
+      body .page > section article.veg h1::after {
+        content: 'VEG '; }
+      body .page > section article.vgn h1::after {
+        content: 'VGN '; }
       body .page > section article.gf.veg h1::after {
-        content: ' • GF • VEG'; }
+        content: 'GF VEG '; }
+      body .page > section article.gf.vgn h1::after {
+        content: 'GF VGN '; }
       body .page > section .divider {
         height: 1em; }
 

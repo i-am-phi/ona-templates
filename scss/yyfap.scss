@@ -1,0 +1,42 @@
+/* Ona Styles */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush');
+
+
+@font-face {
+  font-family: "Arvo";
+  src: url(../fonts/Arvo/Arvo-Regular.ttf)
+}
+@font-face {
+  font-family: "ChunkFive";
+  src: url(../fonts/ChunkFive/Chunkfive.otf)
+}
+:root {
+  --font-heading: 'ChuckFive', sans-serif;
+  --font-heading-decorative: 'ChuckFive', sans-serif;
+  --font-body: 'Arvo', sans-serif;
+}
+
+
+@import 'mixins';
+@import 'elements';
+@import 'doodads';
+@import 'page';
+@import 'panel';
+@import 'header';
+@import 'section';
+@import 'aside';
+@import 'article';
+
+body {
+
+  color: #000;
+  background-color: #FFF;
+
+  margin: 0 auto;
+
+  text-align: center;
+
+}

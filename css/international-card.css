@@ -1,0 +1,13 @@
+@page {
+  margin: 0;
+  size: 8.5in 14in; }
+body {
+  width: 8.5in;
+  font-size: 1em; }
+  body .page {
+    width: 8.5in;
+    height: 7in; }
+    body .page > section {
+      width: 4.25in; }
+
+/*# sourceMappingURL=international-card.css.map */

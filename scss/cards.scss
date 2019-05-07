@@ -40,17 +40,40 @@ article {
     background-position: center;
   }
 
-  &.veg::after {
-    content: '• VEG •';
-    padding-top: 1em;
+  // &.veg::after {
+  //   content: '• VEG •';
+  //   padding-top: 1em;
+  // }
+  // &.gf::after {
+  //   content: '• GF •';
+  //   padding-top: 1em;
+  // }
+  // &.gf.veg::after {
+  //   content: '• GF • VEG •';
+  //   padding-top: 1em;
+  // }
+
+  &::after {
+    padding-top: .5em;
+    font-size: .8em;
+    font-weight: bold;
   }
+
   &.gf::after {
-    content: '• GF •';
-    padding-top: 1em;
+      content: '• GF •';
+  }
+  &.veg::after {
+      content: '• VEG •';
+  }
+  &.vgn::after {
+      content: '• VGN •';
   }
   &.gf.veg::after {
-    content: '• GF • VEG •';
-    padding-top: 1em;
+      content: '• GF • VEG •';
   }
+  &.gf.vgn::after {
+      content: '• GF • VGN •';
+  }
+
 
 }

@@ -1,0 +1,26 @@
+@import 'mixins';
+
+$width: 8.5in;
+$height: 7in;
+
+@page {
+  margin: 0;
+  size: $width $height*2;
+}
+
+body {
+  width: $width;
+
+  font-size: 1em;
+
+  .page {
+
+    width: $width;
+    height: $height;
+
+    > section {
+      width: $width/2;
+    }
+  }
+
+}
