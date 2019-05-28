@@ -134,6 +134,7 @@ header {
     width: 100%;
     height: 100%;
     background: url("../images/ona-logo-bw@4x.png");
+    background: url("../heather/OnaLogo-Plain.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; }
