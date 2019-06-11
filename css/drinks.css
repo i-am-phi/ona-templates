@@ -14,11 +14,11 @@ body {
     justify-content: space-between;
     align-content: center; }
 
-.liquor > ul > li {
+article.liquor > ul > li {
   display: block; }
-  .liquor > ul > li::after {
+  article.liquor > ul > li::after {
     content: '';
-    display: none; }
+    display: inline; }
 
 #cocktails > h1, #cocktails > h2 {
   grid-column: 1 / -1; }
@@ -30,8 +30,10 @@ aside h1 {
   font-style: normal;
   font-weight: 400; }
 
-article li::after {
-  display: none; }
+article ul > li {
+  padding: 0 .5em; }
+  article ul > li::after {
+    content: ' '; }
 
 article.list li {
   display: block;
