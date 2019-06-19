@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hapier Hours 2up</title>
+
+
+  <style>
+    @page {
+      margin: 0;
+      size: 8.5in 14in ;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      /* font-size:   13pt; */
+      /* line-height: 1.25em; */
+      /* background-color: #EEE; */
+    }
+
+    body {
+      height:  28in;
+      width:  8.5in;
+
+      margin: 0 auto;
+
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+
+    iframe {
+      border: none;
+      width:  4.25in;
+      height: 28in;
+      /* height: 14in; */
+    }
+
+    .page {
+      width:  4.25in;
+      /* height: 11in; */
+      font-size: 1.2em;
+
+    }
+
+  </style>
+</head>
+
+<body>
+  <iframe src="happier-hours.html" ></iframe>
+  <iframe src="happier-hours.html" ></iframe>
+
+  <script>
+
+    var d = new Date();
+    document.title = "Happier Hours " + (d.getMonth()+1) + '-' + d.getDate() + '-' + d.getFullYear() + " 2up";
+
+  </script>
+
+</body>
+</html>
