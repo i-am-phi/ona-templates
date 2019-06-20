@@ -27,12 +27,12 @@ body {
 }
 
 
-.liquor {
+article.liquor {
   > ul > li {
     display: block;
     &::after {
       content: '';
-      display: none;
+      display: inline;
     }
   }
 }
@@ -59,8 +59,12 @@ aside {
 }
 
 article {
-  li::after {
-    display: none;
+  ul > li{
+    padding: 0 .5em;
+    &::after {
+      content: ' ';
+      // display: inline;
+    }
   }
 }
 article.list {
