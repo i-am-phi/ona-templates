@@ -27,12 +27,12 @@
 			<h1>First Course</h1>
 
 			<article>
-				<h1>Oregon Dungeness Crab Dip  12.50</h1>
+				<h1>Oregon Dungeness Crab Dip 12.50</h1>
 				<p>sourdough bread</p>
 			</article>
 
 			<article>
-				<h1>Oregon Hazelnut Pesto  8</h1>
+				<h1>Oregon Hazelnut Pesto 8</h1>
 				<p>artisan sourdough</p>
 			</article>
 
@@ -41,34 +41,34 @@
 			<h1>Second Course</h1>
 
 			<article>
-				<h1>Caesar Salad  7</h1>
+				<h1>Caesar Salad 7</h1>
 			</article>
 			<article>
-				<h1>Side Salad  6</h1>
+				<h1>Side Salad 6</h1>
 			</article>
 
 			<article>
-				<h1>Manila Clam Chowder  6</h1>
+				<h1>Manila Clam Chowder 6</h1>
 			</article>
-			<article>
-				<h1>Tomato Bisque  5</h1>
+			article>
+				<h1>Tomato Bisque 5</h1>
 			</article>
 			<h1>Entrée</h1>
 
 
 
 			<article>
-				<h1>Oregon Dungeness Crab Cakes  28</h1>
+				<h1>Oregon Dungeness Crab Cakes 28</h1>
 				<p>capered remoulade, heirloom rice,<br> seasonal vegetables</p>
 			</article>
 
 			<article>
-				<h1>Meatloaf  20</h1>
+				<h1>Meatloaf 20</h1>
 				<p>Mck ranch beef, Sudan farms lamb,<br> Carlton farm pork, mashed potatoes</p>
 			</article>
 
 			<article>
-				<h1>Halibut Fish and Chips  22</h1>
+				<h1>Halibut Fish and Chips 22</h1>
 				<p>tempura style beer battered, capered remoulade,<br>Asian slaw and fries</p>
 			</article>
 
@@ -78,13 +78,15 @@
 			</article>
 
 			<article>
-				<h1>Oregon Mixed Grill  37</h1>
+				<h1>Oregon Mixed Grill 37</h1>
 			<p>One crab cake, two scallops, two wild prawns<br>two grilled oysters, seasonal vegetables<br>heirloom rice</p>
 			<article>
-				<h1>Kids Grilled Cheese or Chicken Strips  7</h1>
+				<h1>Kids Grilled Cheese or Chicken Strips 7</h1>
 				<p>Fruit or Fries</p>
-			</article></article><!DOCTYPE html>
+			</article></article>
 
+
+		<!-- </section> -->
 
 	</div>
 
