@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Event</title>
+	<link rel="stylesheet" href="../../css/ona.css">
+	<link rel="stylesheet" href="../../css/drinks.css">
+</head>
+
+<body>
+
+	<div class="page">
+
+		<!-- <section class="fill"> -->
+
+			<header>
+				<figure title="logo">
+				</figure>
+			</header>
+
+			<h2>Congratulations Miki and Jason!</h2>
+			<p>August 21<sup>st</sup>, 2019</p>
+
+			<h1>Appetizers</h1>
+
+			<article>
+				<h1>Oregon Dungeness Crab Cake</h1>
+				<p>capered remoulade, marinated onion</p>
+			</article>
+
+			<article>
+				<h1>Oregon Hazelnut Pesto</h1>
+				<p>sourdough bread</p>
+			</article>
+
+		 <h1>Soup and Salad</h1>
+
+		 <article>
+		 	<h1>Caesar Salad</h1>
+		 	<p>house made croutons, romano cheese<p>
+			</article>
+
+			<article>
+ 		 	<h1>Tomato Bisque</h1>
+ 		 	<p>sourdough bread<p>
+ 			</article>
+
+			<h1>Entrées</h1>
+
+			<article>
+				<h1>Albacore Tuna</h1>
+				<p>seared RARE, smoked maitake mushroom,<br> soft egg, tamari green beans,<br>crispy garlic, togarashi</p>
+			</article>
+
+			<article>
+				<h1>Meatloaf</h1>
+				<p>Mck ranch beef, Sudan farms lamb, Carlton farm pork,<br> mashed potatoes, caramelized onions</p>
+			</article>
+
+			<article>
+				<h1>Halibut Fish and Chips</h1>
+				<p>tempura style beer battered, capered remoulade, smoky paprika,<br> Asian slaw and fries</p>
+    	</article>
+		<!-- </section> -->
+
+	</div>
+
+
+	<script>
+		var d = new Date();
+		document.getElementById("date").innerHTML = (d.getMonth() + 1) + '•' + d.getDate() + '•' + d.getFullYear();
+		document.title = "event " + (d.getMonth() + 1) + '-' + d.getDate() + '-' + d.getFullYear();
+	</script>
+</body>
+
+</html>
