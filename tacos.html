@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Daily Special</title>
+	<link rel="stylesheet" href="css/ona.css">
+	<link rel="stylesheet" href="css/specials.css">
+</head>
+
+<body>
+
+	<div class="page">
+
+		<section class="fill">
+
+			<header class="banner">
+				<img class="logo" src="images/ona-banner.png" alt="">
+				<img class="star" src="images/star.jpg" alt="">
+				<div>
+					<h1>Specials</h1>
+					<h2 id="date"></h2>
+				</div>
+			</header>
+
+			<h1>DRINKS</h1>
+
+			<article>
+				<h1>The Janis</h1>
+				<p>southern comfort, luxardo cherry syrup, cranberry juice and fresh lime
+					<span class="price">9</span></p>
+			</article>
+
+			<h1>SOUPS</h1>
+
+			<article>
+				<h1>Kale and Lentil <span class="price">5 / 8.5</span></h1>
+			</article>
+
+			<h1>STARTERS</h1>
+
+			<article>
+				<h1>Hamburger</h1>
+				<p>ahi and albacore tuna, avocado,<br>
+					scallion, sweet onion, sesame
+					<span class="price">14</span></p>
+			</article>
+			<article>
+				<h1>Yaquina Bay Grilled Oysters</h1>
+				<p>beurre noisette, shallot
+					<span class="price">12</span></p>
+			</article>
+
+			<h1>ENTREES</h1>
+
+			<article>
+				<h1>Seafood Paella</h1>
+				<p>wild prawns, mussels, clams, salmon and a weathervane scallop, basmati rice
+					<span class="price">30</span></p>
+			</article>
+			<article>
+				<h1>Five Spice Duck</h1>
+				<p>honey sesame sauce, heirloom rice,<br>
+					garlic spinach
+					<span class="price">26</span></p>
+			</article>
+			<article>
+				<h1>Thai Steak Salad</h1>
+				<p>medium rare beef tenderloin, shiitake, peanuts, arugula, cabbage, cilantro,<br>
+					Asian citrus dressing, fried rice noodles<br>
+					and cilantro
+					<span class="price">18</span></p>
+			</article>
+		</section>
+	</div>
+
+
+	<script>
+		var d = new Date();
+		document.getElementById("date").innerHTML = (d.getMonth() + 1) + '•' + d.getDate() + '•' + d.getFullYear();
+		document.title = "Specials " + (d.getMonth() + 1) + '-' + d.getDate() + '-' + d.getFullYear();
+	</script>
+</body>
+
+</html>
