@@ -1,13 +1,17 @@
 @page {
   margin: 0;
-  size: 1800px 900px; }
+  size: 1800px 900px;
+}
 body {
   width: 1800px;
-  font-size: 1.2em; }
-  body .page {
-    width: 1800px;
-    height: 900px; }
-    body .page > section {
-      width: 600px; }
+  font-size: 1.2em;
+}
+body .page {
+  width: 1800px;
+  height: 900px;
+}
+body .page > section {
+  width: 600px;
+}
 
 /*# sourceMappingURL=international-facebook.css.map */

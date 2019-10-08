@@ -1,7 +1,8 @@
 @charset "UTF-8";
 @page {
   margin: 0;
-  size: 11in 8.5in; }
+  size: 11in 8.5in;
+}
 body {
   width: 11in;
   /* height: 8.5in; */
@@ -10,7 +11,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, calc(11in/3));
   grid-auto-rows: calc(8.5in/3);
-  align-items: center; }
+  align-items: center;
+}
 
 /* menu items */
 article {
@@ -18,29 +20,37 @@ article {
   padding: 2em;
   display: flex;
   flex-flow: column nowrap;
-  border: 1px solid #EEE; }
-  article::before {
-    content: "";
-    height: 1em;
-    margin-bottom: 1.5em;
-    display: block;
-    background-image: url("../images/o.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center; }
-  article::after {
-    padding-top: .5em;
-    font-size: .8em;
-    font-weight: bold; }
-  article.gf::after {
-    content: '• GF •'; }
-  article.veg::after {
-    content: '• VEG •'; }
-  article.vgn::after {
-    content: '• VGN •'; }
-  article.gf.veg::after {
-    content: '• GF • VEG •'; }
-  article.gf.vgn::after {
-    content: '• GF • VGN •'; }
+  border: 1px solid #EEE;
+}
+article::before {
+  content: "";
+  height: 1em;
+  margin-bottom: 1.5em;
+  display: block;
+  background-image: url("../images/o.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+article::after {
+  padding-top: 0.5em;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+article.gf::after {
+  content: "• GF •";
+}
+article.veg::after {
+  content: "• VEG •";
+}
+article.vgn::after {
+  content: "• VGN •";
+}
+article.gf.veg::after {
+  content: "• GF • VEG •";
+}
+article.gf.vgn::after {
+  content: "• GF • VGN •";
+}
 
 /*# sourceMappingURL=cards.css.map */

@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAKA,KAGC;EAFC,MAAM,EAAE,CAAC;EACT,IAAI,EAAE,YAAc;AAGtB,IAAK;EACH,KAAK,EATC,MAAM;EAWZ,SAAS,EAAE,KAAK;EAEhB,UAAM;IACJ,KAAK,EAdD,MAAM;IAeV,MAAM,EAdD,KAAK;IAuBV,oBAAU;MACR,KAAK,EAAE,KAAK",
-"sources": ["../scss/international-facebook.scss"],
-"names": [],
-"file": "international-facebook.css"
-}
+{"version":3,"sourceRoot":"","sources":["../scss/international-facebook.scss"],"names":[],"mappings":"AAKA;EACE;EACA;;AAGF;EACE,OATM;EAWN;;AAEA;EACE,OAdI;EAeJ,QAdK;;AAuBL;EACE","file":"international-facebook.css"}

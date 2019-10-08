@@ -1,15 +1,31 @@
 body {
   height: 100%;
-  /* padding: 2em 3em; */ }
+  /* padding: 2em 3em; */
+}
 
 main {
-  height: 100%; }
+  height: 100%;
+}
 
 .page {
-  padding: 2em; }
-
-body .page > section > h1 {
-  padding: 0;
-  padding-top: 1em; }
+  padding: 2em;
+  height: 100%;
+}
+.page > header {
+  font-size: 1.5em;
+  height: auto;
+}
+.page > header > figure {
+  width: 100%;
+  height: 2em;
+  background: url("../heather/Ona-Plain.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 0.5em;
+}
+.page > header #date {
+  font-size: 0.8em;
+}
 
 /*# sourceMappingURL=specials.css.map */

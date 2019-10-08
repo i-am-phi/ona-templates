@@ -1,46 +1,60 @@
 @page {
   size: 4.25in 14in;
-  margin: 0; }
+  margin: 0;
+}
 body {
-  width: 4.25in; }
+  width: 4.25in;
+}
 
 .page {
   width: 4.25in;
   height: 14in;
-  padding: 2em; }
-  .page > section {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    align-content: center; }
+  padding: 2em;
+}
+.page > section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-content: center;
+}
 
 article.liquor > ul > li {
-  display: block; }
-  article.liquor > ul > li::after {
-    content: '';
-    display: inline; }
+  display: block;
+}
+article.liquor > ul > li::after {
+  content: "";
+  display: inline;
+}
 
 #cocktails > h1, #cocktails > h2 {
-  grid-column: 1 / -1; }
+  grid-column: 1/-1;
+}
 #cocktails > h1 {
   width: max-content;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 aside h1 {
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 article ul > li {
-  padding: 0 .5em; }
-  article ul > li::after {
-    content: ' '; }
+  padding: 0 0.5em;
+}
+article ul > li::after {
+  content: " ";
+}
 
 article.list li {
   display: block;
-  padding-bottom: .25em; }
-  article.list li .loc::after {
-    display: none; }
-  article.list li::after {
-    display: none; }
+  padding-bottom: 0.25em;
+}
+article.list li .loc::after {
+  display: none;
+}
+article.list li::after {
+  display: none;
+}
 
 /*# sourceMappingURL=drinks.css.map */

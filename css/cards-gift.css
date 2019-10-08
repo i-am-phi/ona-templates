@@ -1,23 +1,27 @@
 @page {
   size: 3.375in 2.125in;
-  margin: 0; }
+  margin: 0;
+}
 html {
   background: #FFF;
-  height: auto; }
+  height: auto;
+}
 
 body {
   padding: 0;
   width: 3.375in;
   height: auto;
-  margin: 0 auto; }
-  body > .page {
-    width: 3.375in;
-    height: 2.125in;
-    padding: 0;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-content: center; }
+  margin: 0 auto;
+}
+body > .page {
+  width: 3.375in;
+  height: 2.125in;
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+}
 
 article {
   width: 3.375in;
@@ -28,48 +32,60 @@ article {
   z-index: 10;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center; }
-  article.front {
-    align-self: center; }
-  article.back {
-    align-self: center; }
-  article > * {
-    z-index: 20; }
-  article > header.panel {
-    border: none;
-    padding: 2em 1em;
-    height: 100%;
-    width: 100%; }
-    article > header.panel > * {
-      padding: 0;
-      margin: 0; }
-    article > header.panel figure {
-      padding-left: .5em; }
-    article > header.panel .tag {
-      font-size: .7em; }
-  article > figure {
-    height: 1em;
-    margin-bottom: 1.5em;
-    display: block;
-    background-image: url("../images/o.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center; }
-  article > main .title {
-    font-style: italic;
-    font-weight: 400; }
-  article > main .org-name {
-    padding-top: .5em;
-    font-family: "Cinzel"; }
-  article::before {
-    background-image: linear-gradient(rgba(150, 120, 30, 0.4), rgba(150, 120, 30, 0.4)), url("../images/paper/ricepaper/ricepaper.png");
-    position: absolute;
-    display: block;
-    content: ' ';
-    top: -.0625in;
-    bottom: -.0625in;
-    left: -.0625in;
-    right: -.0625in;
-    z-index: -5; }
+  justify-content: center;
+}
+article.front {
+  align-self: center;
+}
+article.back {
+  align-self: center;
+}
+article > * {
+  z-index: 20;
+}
+article > header.panel {
+  border: none;
+  padding: 2em 1em;
+  height: 100%;
+  width: 100%;
+}
+article > header.panel > * {
+  padding: 0;
+  margin: 0;
+}
+article > header.panel figure {
+  padding-left: 0.5em;
+}
+article > header.panel .tag {
+  font-size: 0.7em;
+}
+article > figure {
+  height: 1em;
+  margin-bottom: 1.5em;
+  display: block;
+  background-image: url("../images/o.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+article > main .title {
+  font-style: italic;
+  font-weight: 400;
+}
+article > main .org-name {
+  padding-top: 0.5em;
+  font-family: "Cinzel";
+}
+article::before {
+  background-image: linear-gradient(rgba(150, 120, 30, 0.4), rgba(150, 120, 30, 0.4)), url("../images/paper/ricepaper/ricepaper.png");
+  position: absolute;
+  display: block;
+  content: " ";
+  top: -0.0625in;
+  bottom: -0.0625in;
+  left: -0.0625in;
+  right: -0.0625in;
+  z-index: -5;
+}
 
 /*# sourceMappingURL=cards-gift.css.map */

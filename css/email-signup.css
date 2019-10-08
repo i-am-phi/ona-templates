@@ -1,6 +1,7 @@
 @page {
   margin: 0;
-  size: 8.5in 11in; }
+  size: 8.5in 11in;
+}
 body {
   width: 8.5in;
   /* height: 8.5in; */
@@ -9,7 +10,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, calc(8.5in/3));
   grid-auto-rows: calc(11in/3);
-  align-items: center; }
+  align-items: center;
+}
 
 /* menu items */
 article {
@@ -18,41 +20,51 @@ article {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  border: 1px solid #EEE; }
-  article h2 {
-    font-style: italic;
-    font-weight: 400; }
-  article div {
-    width: 100%; }
-    article div::after {
-      font-size: .6em;
-      border-top: 1px solid #000;
-      margin-top: 4em;
-      display: block;
-      font-weight: 700;
-      padding-top: .25em; }
-    article div.name::after {
-      content: 'name'; }
-    article div.email::after {
-      content: 'email'; }
-  article p {
-    text-align: center;
-    text-transform: uppercase;
-    font-style: normal;
-    font-size: .8em; }
+  border: 1px solid #EEE;
+}
+article h2 {
+  font-style: italic;
+  font-weight: 400;
+}
+article div {
+  width: 100%;
+}
+article div::after {
+  font-size: 0.6em;
+  border-top: 1px solid #000;
+  margin-top: 4em;
+  display: block;
+  font-weight: 700;
+  padding-top: 0.25em;
+}
+article div.name::after {
+  content: "name";
+}
+article div.email::after {
+  content: "email";
+}
+article p {
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 0.8em;
+}
 
 article::before {
   content: "";
   height: 1.5em;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   display: block;
   background-image: url("../images/ona-only-bw.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center; }
+  background-position: center;
+}
 
 @media print {
   article {
-    border: none; } }
+    border: none;
+  }
+}
 
 /*# sourceMappingURL=email-signup.css.map */

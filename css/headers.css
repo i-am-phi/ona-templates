@@ -1,42 +1,56 @@
 @page {
   margin: 0;
-  size: 11in 17in; }
+  size: 11in 17in;
+}
 body {
   width: 11in;
-  font-size: 1.2em; }
-  body header.panel {
-    font-size: 1em;
-    padding: 6em; }
-    body header.panel .logo {
-      height: auto;
-      width: 14em;
-      margin: 0 auto; }
-  body .panel {
-    width: 11in;
-    height: calc(17in/3);
-    padding: 1.5em; }
-    body .panel section {
-      padding: 0; }
+  font-size: 1.2em;
+}
+body header.panel {
+  font-size: 1em;
+  padding: 6em;
+}
+body header.panel .logo {
+  height: auto;
+  width: 14em;
+  margin: 0 auto;
+}
+body .panel {
+  width: 11in;
+  height: calc(17in/3);
+  padding: 1.5em;
+}
+body .panel section {
+  padding: 0;
+}
 
 .tag {
-  font-size: 1.35em; }
-  .tag > * {
-    padding: 0; }
-  .tag p {
-    font-size: 1.5em;
-    font-style: italic; }
+  font-size: 1.35em;
+}
+.tag > * {
+  padding: 0;
+}
+.tag p {
+  font-size: 1.5em;
+  font-style: italic;
+}
 
 .tag2 {
   font-size: 1.2em;
-  width: auto; }
-  .tag2 > * {
-    padding: .1em 0; }
-  .tag2 p {
-    font-style: italic; }
+  width: auto;
+}
+.tag2 > * {
+  padding: 0.1em 0;
+}
+.tag2 p {
+  font-style: italic;
+}
 
 ul {
-  list-style: circle; }
-  ul > li {
-    display: block; }
+  list-style: circle;
+}
+ul > li {
+  display: block;
+}
 
 /*# sourceMappingURL=headers.css.map */

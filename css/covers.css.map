@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAOA,KAGC;EAFC,IAAI,EAAE,WAAwB;EAC9B,MAAM,EAAE,CAAC;AAGX,IAAK;EACH,UAAU,EAAE,KAAK;;AAInB,IAAK;EAEH,KAAK,EAfM,KAAK;EAgBhB,UAAU,EAAE,MAAM;;AAQlB,eAAQ;EACN,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK",
-"sources": ["../scss/covers.scss"],
-"names": [],
-"file": "covers.css"
-}
+{"version":3,"sourceRoot":"","sources":["../scss/covers.scss"],"names":[],"mappings":"AAOA;EACE;EACA;;AAGF;EACE;;;AAIF;EAEE,OAfW;EAgBX;;;AAQA;EACE;EACA","file":"covers.css"}
